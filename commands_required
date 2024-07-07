@@ -1,0 +1,9 @@
+mkdir node_proj
+chmod 777 node_proj/
+cd node_proj/
+vi index.js
+vi package.json
+vi Dockerfile
+docker build -t sjgit/simpleweb .
+docker run -p 8080:8080 sjgit/simpleweb
+
